@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./auth-layout.component.scss']
 })
 export class AuthLayoutComponent implements OnInit, OnDestroy {
-  test: Date = new Date();
+  test: Date = new Date('1399');
   public isCollapsed = true;
 
   constructor(private router: Router) { }

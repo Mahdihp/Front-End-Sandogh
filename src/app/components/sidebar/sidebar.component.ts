@@ -9,10 +9,11 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'داشبورد',  icon: 'ni-tv-2 text-primary', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
-    { path: '/user-profile', title: 'User profile',  icon:'ni-single-02 text-yellow', class: '' },
-    { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
+    { path: '/icons', title: 'صندوق ها',  icon:'ni-planet text-blue', class: '' },
+    { path: '/maps', title: 'اعضاء',  icon:'ni-single-02 text-black', class: '' },
+    { path: '/user-profile', title: 'ماهیانه ها',  icon:'ni-single-02 text-yellow', class: '' },
+    { path: '/tables', title: 'وام ها',  icon:'ni-bullet-list-67 text-red', class: '' },
+    { path: '/tables', title: 'اقساط',  icon:'ni-bullet-list-67 text-red', class: '' },
     { path: '/login', title: 'ورود',  icon:'ni-key-25 text-info', class: '' },
     // { path: '/register', title: 'ثبت نام',  icon:'ni-circle-08 text-pink', class: '' }
 ];
