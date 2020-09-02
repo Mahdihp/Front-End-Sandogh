@@ -12,17 +12,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import {NgxPermissionsModule} from 'ngx-permissions';
 
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
-    FormsModule,
-    HttpClientModule,
     ComponentsModule,
     NgbModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPermissionsModule.forRoot(),
   ],
   declarations: [
     AppComponent,
