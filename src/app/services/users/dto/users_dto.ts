@@ -24,18 +24,13 @@ export interface UserInfo {
   createTime: string;
   updateTime: string;
   jwtResponse: JwtResponse;
-  roles?: Roles | null;
+  roles: string;
   permissions?: Permission[] | null;
 }
 
 export interface Permission {
   id: number;
   displayName: string;
-}
-
-export interface Roles {
-  id: number;
-  name: string;
 }
 
 export interface JwtResponse {

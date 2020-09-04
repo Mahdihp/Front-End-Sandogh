@@ -14,6 +14,7 @@ export class UsersService {
 
 
   Login(loginForm: LoginForm): Observable<UserResponse> {
+    console.log(AppConstants.KEY_USERS_SIGNIN);
     return this.http.post<UserResponse>(AppConstants.KEY_USERS_SIGNIN,
       // + '?username=' + loginForm.username + '&password=' + loginForm.password
       loginForm

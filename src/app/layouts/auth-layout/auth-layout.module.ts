@@ -1,22 +1,29 @@
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AuthLayoutRoutes } from './auth-layout.routing';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
+import {CommonModule} from '@angular/common';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {AuthLayoutRoutes} from './auth-layout.routing';
 
-import { LoginComponent } from '../../pages/login/login.component';
-import { RegisterComponent } from '../../pages/register/register.component';
+import {LoginComponent} from '../../pages/login/login.component';
+import {RegisterComponent} from '../../pages/register/register.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {UsersService} from '../../services/users/users.service';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(AuthLayoutRoutes),
-    FormsModule
-    // NgbModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgbModule,
+    HttpClientModule
   ],
   declarations: [
     LoginComponent,
     RegisterComponent
-  ]
+  ],
+  providers:[UsersService]
 })
-export class AuthLayoutModule { }
+export class AuthLayoutModule {
+}

@@ -25,13 +25,13 @@
           <div class="text-center text-muted mb-4">
             <small style="font-family: VazirBold">نام کاربری و رمز عبور را وارد کنید</small>
           </div>
-          <form role="form" style="font-family: Vazir">
+          <form role="form" [formGroup]="formGroup" style="font-family: Vazir">
             <div class="form-group mb-3">
               <div class="input-group input-group-alternative">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input style="direction: rtl" class="form-control" placeholder="کد ملی" type="number">
+                <input style="direction: rtl" formControlName="username" class="form-control" placeholder="کد ملی" type="text">
               </div>
             </div>
             <div class="form-group">
@@ -39,7 +39,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input style="direction: rtl" class="form-control" placeholder="رمز عبور" type="password">
+                <input style="direction: rtl" formControlName="password" class="form-control" placeholder="رمز عبور" type="password">
               </div>
             </div>
             <div class="custom-control custom-control-alternative custom-checkbox">
@@ -49,7 +49,7 @@
               </label>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-primary my-4">ورود</button>
+              <button type="button" (click)="LoginForm()" class="btn btn-primary my-4">ورود</button>
             </div>
           </form>
         </div>
