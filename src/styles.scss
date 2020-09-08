@@ -76,4 +76,11 @@
 //  float: left;
 //}
 //
-
+.swal2-container swal2-center swal2-backdrop-show,
+.swal2-header,
+.swal2-cancel,
+.swal2-deny,
+.swal2-confirm{
+  font-family: "Vazir Medium";
+  direction: rtl;
+}

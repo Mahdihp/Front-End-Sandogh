@@ -9,6 +9,7 @@ import {RegisterComponent} from '../../pages/register/register.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {UsersService} from '../../services/users/users.service';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {NgxLoadingModule} from 'ngx-loading';
 
 @NgModule({
   imports: [
@@ -17,7 +18,9 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
+    NgxLoadingModule
   ],
   declarations: [
     LoginComponent,

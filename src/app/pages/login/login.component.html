@@ -31,7 +31,8 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                 </div>
-                <input style="direction: rtl" formControlName="username" class="form-control" placeholder="کد ملی" type="text">
+                <input style="direction: rtl" formControlName="username" class="form-control" placeholder="کد ملی"
+                       type="text">
               </div>
             </div>
             <div class="form-group">
@@ -39,7 +40,8 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                 </div>
-                <input style="direction: rtl" formControlName="password" class="form-control" placeholder="رمز عبور" type="password">
+                <input style="direction: rtl" formControlName="password" class="form-control" placeholder="رمز عبور"
+                       type="password">
               </div>
             </div>
             <div class="custom-control custom-control-alternative custom-checkbox">
@@ -54,14 +56,19 @@
           </form>
         </div>
       </div>
-<!--      <div class="row mt-3">-->
-<!--        <div class="col-6">-->
-<!--          <a href="javascript:void(0)" class="text-light"><small>Forgot password?</small></a>-->
-<!--        </div>-->
-<!--        <div class="col-6 text-right">-->
-<!--          <a href="javascript:void(0)" class="text-light"><small>Create new account</small></a>-->
-<!--        </div>-->
-<!--      </div>-->
+      <!--      <div class="row mt-3">-->
+      <!--        <div class="col-6">-->
+      <!--          <a href="javascript:void(0)" class="text-light"><small>Forgot password?</small></a>-->
+      <!--        </div>-->
+      <!--        <div class="col-6 text-right">-->
+      <!--          <a href="javascript:void(0)" class="text-light"><small>Create new account</small></a>-->
+      <!--        </div>-->
+      <!--      </div>-->
     </div>
   </div>
 </div>
+<ngx-loading [show]="loading" [config]="{animationType: ngxLoadingAnimationTypes,
+                  primaryColour: '#ffffff',
+                   secondaryColour: '#006ddd',
+                   backdropBorderRadius: '3px'}"></ngx-loading>
+

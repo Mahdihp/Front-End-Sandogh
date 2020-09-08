@@ -8,6 +8,7 @@ import {
   chartExample1,
   chartExample2
 } from "../../variables/charts";
+import {NgxPermissionsService, NgxRolesService} from 'ngx-permissions';
 
 @Component({
   selector: 'app-dashboard',
@@ -22,10 +23,10 @@ export class DashboardComponent implements OnInit {
   public clicked: boolean = true;
   public clicked1: boolean = false;
 
-  constructor() { }
+  constructor(private ngxPermissionsService: NgxPermissionsService,
+              private ngxRolesService: NgxRolesService) { }
 
   ngOnInit() {
-
     this.datasets = [
       [0, 20, 10, 30, 15, 40, 20, 60, 60],
       [0, 20, 5, 25, 10, 30, 15, 40, 40]
